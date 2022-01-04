@@ -1,0 +1,43 @@
+.default {
+    width: 75px;
+    height: 30px;
+    color: #FFFFF0;
+    border: dot-dot-dash;
+    border-radius: 8px;
+    background-color: darkgreen;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+.default:hover {
+    opacity: 0.5;
+}
+
+.default:active {
+    color: black;
+}
+
+.red {
+    background: red;
+    width: 75px;
+    height: 30px;
+    color: #FFFFF0;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    border: dot-dot-dash;
+    border-radius: 8px;
+}
+
+.red:hover {
+    opacity: 0.5;
+}
+
+.red.active {
+    color: black;
+}
+
+.button {
+    margin-top: 5px;
+}
