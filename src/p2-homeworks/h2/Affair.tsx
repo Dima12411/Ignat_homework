@@ -1,7 +1,7 @@
 import React from 'react'
 import {findAllByDisplayValue} from "@testing-library/react";
 import s from './Affairs.module.css'
-import {AffairType} from "./HW2";
+import {AffairType, FilterType} from "./HW2";
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type AffairPropsType = {
@@ -11,28 +11,24 @@ type AffairPropsType = {
 }
 
 function Affair(props: AffairPropsType) {
-    const deleteCallback = () => {props.deleteAffairCallback(props.affair._id)}
-    const stylePriority = {
-        color: 'white',
-        border: '1px solid black',
-        marginLeft: '20px',
-        backgroundColor: props.affair.priority === 'low' ? 'green' : props.affair.priority === 'middle' ? 'orange' : 'red'
+    const deleteCallback = () => {
+        props.deleteAffairCallback(props.affair._id)
     }
+
     return (
         <div>
             {
                 <div className={s.flex}>
-                    {props.affair.name}:
-                    <div className={s.span}>
-                        <span
-                        style={stylePriority}>
-                        {props.affair.priority}
-                    </span>
+                    <div className={s.name}>
+                        {props.affair.name}:
                     </div>
-                    <div>
-                    {/*<button onClick={deleteCallback}>X</button>*/}
-                    <SuperButton className={s.delete}
-                        onClick={deleteCallback}>X</SuperButton>
+                    <div className={props.affair.priority === 'low' ? s.priority_green : props.affair.priority === 'middle' ? s.priority_yellow : s.priority_red}>
+                        {props.affair.priority}
+
+                    </div>
+                    <div className={s.delete}>
+                        {/*<button onClick={deleteCallback}>X</button>*/}
+                        <SuperButton className={s.button_delete} onClick={deleteCallback}>X</SuperButton>
                     </div>
                 </div>
             }
