@@ -3,7 +3,7 @@
     max-width: 400px;
     justify-content: space-between;
     align-items: center;
-    margin: 10px;
+    margin: 10px 10px 10px 20px;
     border: 1px black solid;
     border-radius: 15px;
     padding: 3px;
@@ -50,11 +50,12 @@
 
 .delete {
     margin-bottom: 3px;
+
 }
 
 .button_container {
     display: flex;
-    margin-left: 5px;
+    margin-left: -45px;
 }
 
 .button {
@@ -64,4 +65,10 @@
 .button_delete {
     color: black;
     background-color: white;
+}
+
+.button_all {
+    background-color: red;
+    color: darkorange;
+    border: 2px solid black;
 }

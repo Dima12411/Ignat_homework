@@ -1,0 +1,22 @@
+.span {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid grey;
+    padding-top: 10px;
+    border-radius: 5px;
+    color: black;
+    font-weight: normal;
+    background-color: white;
+    margin: 5px 0px 5px 35px;
+    background-image: url("https://avatars.mds.yandex.net/i?id=bc5087c43b3e3a4578af37472144b6b5-5219049-images-thumbs&n=13&exp=1");
+    background-repeat: no-repeat;
+    background-size: 35px 30px;
+    background-position: 118px;
+}
+
+.span:hover {
+    border: 1px solid green;
+}

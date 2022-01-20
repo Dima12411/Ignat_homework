@@ -37,7 +37,7 @@ function Affairs(props: AffairsPropsType) {
 
             {mappedAffairs}
             <div className={s.button_container}>
-                <div className={s.button}><SuperButton onClick={setAll}>All</SuperButton></div>
+                <div className={s.button}><SuperButton className={s.button_all} onClick={setAll}>All</SuperButton></div>
                 <div className={s.button}><SuperButton onClick={setHigh}>High</SuperButton></div>
                 <div className={s.button}><SuperButton onClick={setMiddle}>Middle</SuperButton></div>
                 <div className={s.button}><SuperButton onClick={setLow}>Low</SuperButton></div>
