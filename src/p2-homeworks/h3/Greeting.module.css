@@ -1,20 +1,78 @@
-.someClass {
+/*.someClass {*/
 
+/*}*/
+
+/*.error {*/
+/*    border: 2px solid red;*/
+/*    background-color: white;*/
+/*    opacity: 0.8;*/
+/*}*/
+/*.error:focus {*/
+/*    border-color: darkred;*/
+/*}*/
+
+/*.error2 {*/
+/*    border: 2px solid black;*/
+/*    background-color: white;*/
+/*    opacity: 0.8;*/
+/*}*/
+
+/*.error2:focus {*/
+/*    border-color: darkred;*/
+/*}*/
+
+/*.errorColor {*/
+/*    color: red;*/
+/*    font-weight: bold;*/
+/*}*/
+* {
+    box-sizing: border-box;
 }
 
+.greeting {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+}
+
+.input {
+    background: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    outline: none;
+    width: 100%;
+}
+
+.input:focus {
+    border-color: green;
+}
+.input.error:focus {
+    border-color: red;
+}
 .error {
-    border: 2px solid red;
-    background-color: darkgreen;
-    opacity: 0.8;
+    border-color: red;
 }
 
-.error2 {
-    border: 2px solid black;
-    background-color: darkgreen;
-    opacity: 0.8;
-}
-
-.errorColor {
+.errorText {
+    display: block;
+    width: 130px;
     color: red;
-    font-weight: bold;
+    margin: 10px auto;
+}
+
+.button {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.users {
+    display: block;
+    width: 10px;
+    margin: 2px auto;
+    color: black;
+    font-size: 20px;
 }

@@ -30,7 +30,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             setError('')
         } else {
             setName('')
-            setError('name is require')
+            setError('name is required')
         }
     }
 

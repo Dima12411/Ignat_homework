@@ -1,74 +1,144 @@
-.flex {
-    display: flex;
+/*.task {*/
+/*    display: flex;*/
+/*    max-width: 400px;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    margin: 10px 10px 10px 20px;*/
+/*    border: 1px black solid;*/
+/*    border-radius: 15px;*/
+/*    padding: 3px;*/
+/*}*/
+
+/*.priority_red {*/
+/*    display: inline-block;*/
+/*    text-align: center;*/
+/*    padding-top: 3px;*/
+/*    color: white;*/
+/*    border: 1px solid white;*/
+/*    width: 70px;*/
+/*    height: 30px;*/
+/*    border-radius: 5px;*/
+/*    background-color: red;*/
+/*    margin-left: 20px;*/
+/*}*/
+
+/*.priority_yellow {*/
+/*    display: inline-block;*/
+/*    text-align: center;*/
+/*    padding-top: 3px;*/
+/*    color: white;*/
+/*    border: 1px solid white;*/
+/*    width: 70px;*/
+/*    height: 30px;*/
+/*    border-radius: 5px;*/
+/*    background-color: orange;*/
+/*    margin-left: -20px;*/
+/*}*/
+
+/*.priority_green {*/
+/*    display: inline-block;*/
+/*    text-align: center;*/
+/*    padding-top: 3px;*/
+/*    color: white;*/
+/*    border: 1px solid white;*/
+/*    width: 70px;*/
+/*    height: 30px;*/
+/*    border-radius: 5px;*/
+/*    background-color: green;*/
+/*    margin-left: 18px;*/
+/*}*/
+
+/*.delete {*/
+/*    margin-bottom: 3px;*/
+
+/*}*/
+
+/*.button_container {*/
+/*    display: flex;*/
+/*    margin-left: -45px;*/
+/*}*/
+
+/*.button {*/
+/*    margin-left: 22px;*/
+/*}*/
+
+/*.button_delete {*/
+/*    color: black;*/
+/*    background-color: white;*/
+/*}*/
+
+/*.button_all {*/
+/*    background-color: red;*/
+/*    color: darkorange;*/
+/*    border: 2px solid black;*/
+/*}*/
+
+* {
+    box-sizing: border-box;
+}
+.task {
     max-width: 400px;
-    justify-content: space-between;
+    display: flex;
     align-items: center;
-    margin: 10px 10px 10px 20px;
-    border: 1px black solid;
-    border-radius: 15px;
-    padding: 3px;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius :10px;
+    padding: 10px;
+    margin: 10px auto;
+    background: #fff;
 }
-
-.priority_red {
-    display: inline-block;
-    text-align: center;
-    padding-top: 3px;
-    color: white;
-    border: 1px solid white;
-    width: 70px;
-    height: 30px;
-    border-radius: 5px;
-    background-color: red;
-    margin-left: 20px;
+.task span:nth-child(2) {
+    margin-left: auto;
+    margin-right: 30px;
 }
-
-.priority_yellow {
-    display: inline-block;
-    text-align: center;
-    padding-top: 3px;
-    color: white;
-    border: 1px solid white;
-    width: 70px;
-    height: 30px;
-    border-radius: 5px;
-    background-color: orange;
-    margin-left: -20px;
-}
-
-.priority_green {
-    display: inline-block;
-    text-align: center;
-    padding-top: 3px;
-    color: white;
-    border: 1px solid white;
-    width: 70px;
-    height: 30px;
-    border-radius: 5px;
-    background-color: green;
-    margin-left: 18px;
-}
-
-.delete {
-    margin-bottom: 3px;
-
+.task button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: darkred;
 }
 
 .button_container {
+    max-width: 400px;
     display: flex;
-    margin-left: -45px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
 }
 
-.button {
-    margin-left: 22px;
+.button_container button {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    margin-right: 2px;
+}
+.button_container button:nth-child(2) {
+    background: red;
+    color: #fff;
+}
+.button_container button:nth-child(3) {
+    background: #fddc00;
+}
+.button_container button:nth-child(4) {
+    background: green;
+    color: #fff;
 }
 
-.button_delete {
-    color: black;
-    background-color: white;
+.priority_red {
+    font-weight: normal;
+    color: red;
 }
 
-.button_all {
-    background-color: red;
-    color: darkorange;
-    border: 2px solid black;
+.priority_yellow {
+    font-weight: normal;
+    color: sandybrown;
+}
+
+.priority_green {
+    font-weight: normal;
+    color: darkgreen;
+}
+
+.name {
+    color: #282c34;
 }

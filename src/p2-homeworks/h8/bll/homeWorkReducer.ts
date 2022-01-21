@@ -11,7 +11,7 @@ export const homeWorkReducer = (state: Array<UserType>, action: allActionType): 
             return stateCopy.sort((a,b) => a.age < b.age ? -1 : 1)
         }
         case 'CHECK-OF-LEGAL-AGE': {
-            return state.filter(f => f.age >= 18)
+            return state.filter(f => f.age >= action.payload)
         }
         default: return state
     }
@@ -42,5 +42,6 @@ type CheckOfLegalAgeType = ReturnType<typeof checkOfLegalAge>
 const checkOfLegalAge = () => {
     return {
         type: 'CHECK-OF-LEGAL-AGE',
+        payload: 18
     } as const
 }

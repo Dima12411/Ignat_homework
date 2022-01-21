@@ -18,21 +18,17 @@ function Affair(props: AffairPropsType) {
     return (
         <div>
             {
-                <div className={s.flex}>
-                    <div className={s.name}>
-                        {props.affair.name}:
-                    </div>
-                    <div className={props.affair.priority === 'low' ? s.priority_green : props.affair.priority === 'middle' ? s.priority_yellow : s.priority_red}>
-                        {props.affair.priority}
+                <div className={s.task}>
+                    <span className={s.name}>
+                        {props.affair.name}:</span>
+                    <span
+                        className={props.affair.priority === 'low' ? s.priority_green : props.affair.priority === 'middle' ? s.priority_yellow : s.priority_red}>
+                        [ {props.affair.priority} ]</span>
+                    {/*<button onClick={deleteCallback}>X</button>*/}
+                    <SuperButton onClick={deleteCallback}>X</SuperButton>
 
-                    </div>
-                    <div className={s.delete}>
-                        {/*<button onClick={deleteCallback}>X</button>*/}
-                        <SuperButton className={s.button_delete} onClick={deleteCallback}>X</SuperButton>
-                    </div>
                 </div>
             }
-            <br/>
         </div>
     )
 }

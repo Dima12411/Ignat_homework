@@ -1,0 +1,19 @@
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 5px auto;
+    background: #FFF;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: black;
+}
+
+.buttons {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
