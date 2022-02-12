@@ -8,10 +8,10 @@ function Header() {
     return (
         <nav className={s.container}>
                 <div className={s.navigation}>
-                    <NavLink className={s.navlink} to={PATH.PRE_JUNIOR}>PreJunior &nbsp;</NavLink>
-                    <NavLink className={s.navlink} to={PATH.JUNIOR}>Junior &nbsp;</NavLink>
-                    <NavLink className={s.navlink} to={PATH.JUNIOR_PLUS}>JuniorPlus &nbsp;</NavLink>
-                    <span>&nbsp; &gt;&nbsp; </span>
+                    <NavLink className={({isActive}) => (isActive ? s.active : s.item)} to={PATH.PRE_JUNIOR}>PreJunior</NavLink>
+                    <NavLink className={({isActive}) => (isActive ? s.active : s.item)} to={PATH.JUNIOR}>Junior</NavLink>
+                    <NavLink className={({isActive}) => (isActive ? s.active : s.item)} to={PATH.JUNIOR_PLUS}>JuniorPlus</NavLink>
+                    <span className={s.span}>Navigation</span>
                 </div>
         </nav>
     )

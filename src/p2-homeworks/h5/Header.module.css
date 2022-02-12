@@ -39,18 +39,21 @@
     margin-right: 300px;
     margin-top: 15px;
 }*/
+.span {
+    color: #936c6c;
+    margin-left: 8px;
+}
 
 .container {
     font-size: 1.3rem;
-    height: 25px;;
+    height: 25px;
 }
 
 .navigation {
     background-color: sandybrown;
     border-radius: 0 18px 18px 0;
-
-    width: 340px;
-    transform: translate(-300px);
+    width: 410px;
+    transform: translate(-290px);
     transition-duration: 1s;
 }
 
@@ -61,13 +64,23 @@
 .navlink {
     text-decoration: none;
     color: darkslateblue;
+    margin-left: 10px;
 }
 
 navlink:hover {
     color: black;
 }
 
-.active {
-    color: #2f4f4f;
+.item {
     display: inline-block;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #2d2626;
+}
+
+.active {
+    color: #66afaf;
+    display: inline-block;
+    margin-left: 10px;
+    text-decoration: none;
 }
