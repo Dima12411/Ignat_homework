@@ -15,14 +15,14 @@ function HW7() {
 
             {/*should work (должно работать)*/}
             <div className={s.selectSuperContainer}>
-                <div className={s.select}>
+
                     <SuperSelect
                         className={s.superSelect}
                         options={arr}
                         value={value}
                         onChangeOption={onChangeOption}
                     />
-                </div>
+
             </div>
             <div>
                 <div className={s.superRadioContainer}>
