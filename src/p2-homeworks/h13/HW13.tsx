@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Request = () => {
+const HW13 = () => {
     return (
         <div>
             <button>x</button>
@@ -9,4 +9,4 @@ const Request = () => {
     );
 };
 
-export default Request;
+export default HW13;
