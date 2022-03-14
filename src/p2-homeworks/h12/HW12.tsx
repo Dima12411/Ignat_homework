@@ -6,7 +6,7 @@ import {AppStoreType} from "../h10/bll/store";
 import {changeThemeC} from "./bll/themeReducer";
 
 
-const themes = ['dark', 'red'];
+const themes = ['dark', 'red', 'green', 'yellow'];
 
 function HW12() {
     const dispatch = useDispatch()
